@@ -5,11 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev":"nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Raja Singh",
   "license": "ISC",
   "devDependencies": {
     "prettier": "^3.2.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
   }
 }
